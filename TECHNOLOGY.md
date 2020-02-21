@@ -1,11 +1,19 @@
 # overview of enabling technologies
-
-
-
-### stack
-
 * Geohash is an open source method developed in 2008 to turn two (or more) spatial coordinates into a single hashed value
-* 
+* The technology turns a time series of geospatial coordinates into an encrypted and anonymized dataset; if a known infected person is identified the platform can search for other individuals who occupied the same place at the same time (they share identical geotemporal coordinates).
+* users who are potentially exposed can see alerts tagged to thier UUIDs
+
+### encoding
+* each user is assigned an anonymous UUID
+* at perioid intervals spatial coordinates captures and converted into a ```geohash``` and combined with the time (in UTC) is combined  to make a ```geotemporal hash```
+* the ```geotemporal hash``` is encrypted and stored on a server
+* this ensures privacy in several ways
+  * no user identifier is stored (only a UUID); only the user can identify themselves and knowing the UUID is required for decryption of alerts
+  * the time series data 
+
+
+### looking for collisions
+
 
 
 ### examples
@@ -73,7 +81,7 @@ print(coord_decoded)
 
 
 ### libraries used
-[Sodium Cryptography library](https://cran.r-project.org/web/packages/sodium/vignettes/intro.html)
-[Geohash libary](https://www.rdocumentation.org/packages/geohash/versions/0.3.0)
-[Lubridate]
-[
+* [Sodium Cryptography library](https://cran.r-project.org/web/packages/sodium/vignettes/intro.html)
+* [Geohash libary](https://www.rdocumentation.org/packages/geohash/versions/0.3.0)
+* [Lubridate](https://cran.r-project.org/web/packages/lubridate/index.html)
+* [UUID](https://cran.r-project.org/web/packages/uuid/index.html)
