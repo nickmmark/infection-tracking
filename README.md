@@ -23,19 +23,19 @@ _worldwide spread of Wuhan Coronavirus December 2019 to February 2020, source: w
 * this app also securely tracks users locations
 * this information can be used to identify if a user has been in the same location as an infected person
 
-## app and platform design
+## [design of app and platform](https://github.com/nickmmark/infection-tracking/blob/master/DESIGN.md)
 * 
 * there are two core pieces of the platform
   * a mobile app that can provide information about outbreaks and securely track locations
   * a platform that can identify exposure between infected individuals and other users
 
-## underlying technology
-* for a detailed description see [here](https://github.com/nickmmark/infection-tracking/blob/master/TECHNOLOGY.md)
+## [enabling technology](https://github.com/nickmmark/infection-tracking/blob/master/TECHNOLOGY.md)
+* for a detailed description see [here]
 * the key to privacy preserving geospatial data is encoding the users coordinates as a geohash and combining that with time series data to create a fully deidentified encrypted geotemporal database.
 * if an infected person is found, the platform can identify what other users were in the same locations at the same times (e.g. who was exposed). The exposed individuals receive notifications via the mobile app.
 * importantly, the database is tied to anonymous identifiers
 
-## business case
+## [business case]()
 * the app provides a free service to users, which encourages them to download it
 * the app also enables privacy preserving tracking, which is a valuable service to the government
 * 
