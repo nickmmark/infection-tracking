@@ -17,6 +17,12 @@ _worldwide spread of Wuhan Coronavirus December 2019 to February 2020, source: w
   * Identifying where infected people have been is the key to finding those who are at risk for infection.
 * A novel approach for rapidly identifying individuals who may have been exposed to infected hosts is desperately needed.
 
+## Users
+1. People - --@risk of infection--
+2. Public/national health agencies - CDC/BARDA/DOD in US
+3. Health systems? 
+
+### User Stories
 
 
 ## proposed solution
