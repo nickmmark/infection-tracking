@@ -14,6 +14,7 @@ _worldwide spread of Wuhan Coronavirus December 2019 to February 2020, source: w
 * For novel viruses few treatment options exist. Developing vaccines and antiviral therapeis can take years, at which point a virus could have become a pandemic. The most effective (and sometimes only) strategy is ***_containment_***.
 * Because these infections have a latent period and can spread readily from one person to another, ***_the central challenge of containing infection is to identifying who has been exposed to infected individuals._*** 
   * Historically this has been a labor intensive process requiring public health officials to laboriously identify anyone who might have been in proximity to an infected person (e.g. who are their neigbhoors, who sat next to them on an airplane, etc). Unfortunatly these approaches are slow, labor-intensive, and often fail to promptly identify many people who were exposed.
+  * Identifying where infected people have been is the key to finding those who are at risk for infection.
 * A novel approach for rapidly identifying individuals who may have been exposed to infected hosts is desperately needed.
 * ***Our mobile app and associated platform takes advantage of the fact that modern smartphones are ubiquitous, able to collect geospatial data, and able to share it over secure networks. By developing a privacy preserving algorithm, we enable users to immediately see if they have been exposed to infected individuals without risking exposure of thier location data.***
 
