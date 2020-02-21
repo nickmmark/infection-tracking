@@ -24,7 +24,10 @@
   * a platform that can identify exposure between infected individuals and other users
 
 ## underlying technology
-* for a detailed description see here
+* for a detailed description see [here](https://github.com/nickmmark/infection-tracking/blob/master/TECHNOLOGY.md)
+* the key to privacy preserving geospatial data is encoding the users coordinates as a geohash and combining that with time series data to create a fully deidentified encrypted geotemporal database.
+* if an infected person is found, the platform can identify what other users were in the same locations at the same times (e.g. who was exposed). The exposed individuals receive notifications via the mobile app.
+* importantly, the database is tied to anonymous identifiers
 
 ## business case
 * the app provides a free service to users, which encourages them to download it
