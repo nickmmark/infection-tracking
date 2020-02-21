@@ -24,10 +24,10 @@ _worldwide spread of Wuhan Coronavirus December 2019 to February 2020, source: w
 * this information can be used to identify if a user has been in the same location as an infected person
 
 ## [design of app and platform](https://github.com/nickmmark/infection-tracking/blob/master/DESIGN.md)
-* 
 * there are two core pieces of the platform
   * a mobile app that can provide information about outbreaks and securely track locations
   * a platform that can identify exposure between infected individuals and other users
+  
 
 ## [enabling technology](https://github.com/nickmmark/infection-tracking/blob/master/TECHNOLOGY.md)
 * for a detailed description see [here]
@@ -38,10 +38,16 @@ _worldwide spread of Wuhan Coronavirus December 2019 to February 2020, source: w
 ## [business case]()
 * the app provides a free service to users, which encourages them to download it
 * the app also enables privacy preserving tracking, which is a valuable service to the government
-* 
+* the app is presumably free to download; most of the revenues are from a ***B2G*** payment model; maybe there is also a ***fremium*** set of features that is sold with a ***B2C*** model.
+ * paid advertising?
 
 ## competitors
 * [several mobile apps have been developed to track infections](https://jglobalbiosecurity.com/articles/10.31646/gbio.39/), however none has been especially successful.
+ * [healthMap](https://healthmap.org/en/) - essentially a geo news aggregator; mobile and web clients, allows users to 'report' local outbreaks
+ * [sickWeather](http://www.sickweather.com/) - illness forcasting and mapping; has a slick UX for iOS and watchOS and gives a "SickScore®" to predict the local risk
+ * [fluView](https://apps.apple.com/us/app/fluview/id507807044) - a CDC app that shares influenza data
+ * [fluTracker](https://apps.apple.com/us/app/fluview/id507807044) - 
+ * [flu near you 2](https://flunearyou.org/#!/) - 
 
 ## references
 * 
