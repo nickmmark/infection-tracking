@@ -23,7 +23,8 @@ _worldwide spread of Wuhan Coronavirus December 2019 to February 2020, source: w
 3. Health systems? 
 
 ### User Stories
-
+1. As an `un-infected`, I want to know whether I have been in close contact/proximity to a ```diagnosed```, so I can decide to self quarantine. 
+2. 
 
 ## proposed solution
 * ***Our mobile app and associated platform takes advantage of the fact that modern smartphones are ubiquitous, able to collect geospatial data, and able to share it over secure networks. By developing a privacy preserving algorithm, we enable users to immediately see if they have been exposed to infected individuals without risking exposure of thier location data.***
