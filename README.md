@@ -9,6 +9,8 @@
 
 ![wuhan coronavirus spread, source: wikipedia](https://upload.wikimedia.org/wikipedia/commons/b/b3/COVID-19-outbreak-timeline.gif)
 
+_worldwide spread of Wuhan Coronavirus December 2019 to February 2020, source: wikipedia_
+
 * For novel viruses few treatment options exist. Developing vaccines and antiviral therapeis can take years, at which point a virus could have become a pandemic. The most effective (and sometimes only) strategy is ***_containment_***.
 * Because these infections have a latent period and can spread readily from one person to another, ***_the central challenge of containing infection is to identifying who has been exposed to infected individuals._*** 
   * Historically this has been a labor intensive process requiring public health officials to laboriously identify anyone who might have been in proximity to an infected person (e.g. who are their neigbhoors, who sat next to them on an airplane, etc). Unfortunatly these approaches are slow, labor-intensive, and often fail to promptly identify many people who were exposed.
