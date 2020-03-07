@@ -4,6 +4,7 @@
 
 ## overall design: userID + coordinates + time --> hash --> encrypted value
 
+## section I: test cases
 # load libraries
 library(geohash)
 library(sodium)
@@ -20,7 +21,7 @@ coord_hash <- gh_encode(lat, long, precision = 10)          # turn coordinates i
 neighboors_hash <- gh_neighbours(coord_hash)                # identify neighbooring squares
 coord_decoded <- gh_decode(coord_hash)
 
-geotemporal_hash <- paste(time,coord_hash, sep = " ", collapse = NULL) # combine the time and coordinates together
+geotemporal_string <- paste(time,coord_hash, sep = " ", collapse = NULL) # combine the time and coordinates together
 
 
 coord_df <- data.frame(userID, time, time_as_string, lat, long, coord_hash) # dataframe
@@ -30,7 +31,37 @@ print(lat)
 print(long)
 print(coord_hash)
 print(neighboors_hash)
-print (geotemporal_hash)
+print (geotemporal_string)
+
+# generate private and public keys
+private_key <- keygen()
+public_key <- pubkey(private_key)
+
+# encrypt geohashes using curve25519 encryption and public key
+coord_ciphertext <- simple_encrypt(charToRaw(geotemporal_string), public_key)
+print(coord_ciphertext)
+
+# decrypt geohashes using the key
+coord_decrypted <- simple_decrypt(coord_ciphertext, private_key)
+print (coord_decrypted)
+coord_decoded <- gh_decode(rawToChar(coord_decrypted))
+print(coord_decoded)
+
+
+## section II: proposed three functions that instanciate this idea
+
+encrypt_geotemporal <- function(lat, long, time){
+  # pass a position and a time and return the encrypted code for both
+  # convert time to UTC
+  # convert lat/long to geohash
+  # combine time/geohash into one string
+  # encrypt using an established public key
+  # return GEOTEMPORAL HASH
+}
+
+log_geotemporalhash <- function(geotemporal, log_file){
+  # write the specified encrypted has to a specified log file
+}
 
 collision_check <- function(test_coord_hash, test_time, log_file){
   # check for collisions by comparing the given coordinates_hash against the log
@@ -39,33 +70,5 @@ collision_check <- function(test_coord_hash, test_time, log_file){
   # compare coordinate_hash, neighboors_hash against the database
   # return TRUE if the user co-incides with another user/neighboor in the database
 }
-
-encrypt_geotemporal <- function(lat, long, time){
-  # pass a position and a time and return the encrypted code for both
-  # convert time to UTC
-  # convert lat/long to geohash
-  # combine time/geohash into one string
-  # encrypt using an established public key
-}
-
-
-
-### some problem with encryption - need to troubleshoot handling of data types (raw to char? char back to raw?)
-
-# encrypt geohashes
-key <- hash(charToRaw("Secret passphrase"))
-nonce <- random(24)
-coord_encrypted <- data_encrypt(charToRaw(geotemporal_hash), key, nonce)
-print(coord_encrypted)
-
-# decrypt geohashes with same key and nonce
-coord_decrypted <- data_decrypt(coord_encrypted, key, nonce)
-print (coord_decrypted)
-coord_decoded <- gh_decode(coord_decrypted)
-print(coord_decoded)
-
-# load a log file of all geotemporal positions
-
-
 
 
