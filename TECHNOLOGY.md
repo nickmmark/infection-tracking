@@ -65,6 +65,8 @@ print (rawToChar(coord_decrypted))
 print(coord_decoded)
 ```
 
+![](https://github.com/nickmmark/infection-tracking/blob/master/technology_example.png)
+
 
 ### libraries used
 * [Sodium Cryptography library](https://cran.r-project.org/web/packages/sodium/vignettes/intro.html)
