@@ -1,3 +1,6 @@
+### Geotemporalspatial encoding of data
+* objective: combine time and location data into a encrypted hash; the ciphertext can be compared to look for ```collisions``` without compromising the users privacy by revealing thier location.
+
 # overview of enabling technologies
 * Geohash is an open source method developed in 2008 to turn two (or more) spatial coordinates into a single hashed value
 * The technology turns a time series of geospatial coordinates into an encrypted and anonymized dataset; if a known infected person is identified the platform can search for other individuals who occupied the same place at the same time (they share identical geotemporal coordinates).
