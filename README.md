@@ -23,12 +23,12 @@ _worldwide spread of Wuhan Coronavirus December 2019 to February 2020, source: w
  * this app also securely tracks users locations
  * this information can be used to identify if a user has been in the same location as an infected person
 
-## [design of app and platform](https://github.com/nickmmark/infection-tracking/blob/master/DESIGN.md)
+## design of app and platform
 * there are two core pieces of the platform
   * a mobile app that can provide information about outbreaks and securely track locations
   * a platform that can identify exposure between infected individuals and other users
   
-  ## Geotemporalspatial encoding of data
+## Geotemporalspatial encoding of data
 * objective: combine time and location data into a encrypted hash; the ciphertext can be compared to look for ```collisions``` without compromising the users privacy by revealing thier location.
 
 ### overview of enabling technologies
