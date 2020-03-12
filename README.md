@@ -1,7 +1,7 @@
 # infection-tracking and geotemporal encoding
 
 ## problem statement
-* over the last two decades several novel viral respiratory epidemics have rocked the world: [SARS Coronavirus](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome) (2002-2003), [H1N1 Influenza](https://en.wikipedia.org/wiki/Influenza_A_virus_subtype_H1N1), [MERS Coronavirus](https://en.wikipedia.org/wiki/Middle_East_respiratory_syndrome-related_coronavirus) (2012), [Wuhan Coronavirus](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) (2019-2020), etc.
+* over the last two decades several novel viral respiratory epidemics have rocked the world: [SARS Coronavirus](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome) (2002-2003), [H1N1 Influenza](https://en.wikipedia.org/wiki/Influenza_A_virus_subtype_H1N1), [MERS Coronavirus](https://en.wikipedia.org/wiki/Middle_East_respiratory_syndrome-related_coronavirus) (2012), [COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) (2019-2020), etc.
 * collectively these viruses have causes thousands of deaths and billions of dollars in lost productivity: the [world bank estimates](https://www.weforum.org/agenda/2018/05/how-epidemics-infect-the-global-economy-and-what-to-do-about-it/) that each of these epidemics has resulted in loss of 0.7% of worldwide GDP (or approximately $570B annually)
 * any of these viral epidemics can potentially become a ***_worldwide pandemic_*** like the Spanish Flu of 1919-1920, which infected approximately 27% of all people on Earth and killed 50-100m people worldwide.
 * because of widespread air travel, these modern viral infections have spread throughout the world, as illustrated by the rapid spread of Wuhan coronovirus in 2019-2020:
