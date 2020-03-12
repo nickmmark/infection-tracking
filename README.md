@@ -39,17 +39,17 @@ _worldwide spread of Wuhan Coronavirus December 2019 to February 2020, source: w
 ![overview of technology](https://github.com/nickmmark/infection-tracking/blob/master/technology_idea.png)
 
 ### encoding
-* each user is assigned an anonymous UUID (this is done according to the ISO 9834 standard)
-* at periodic intervals spatial coordinates captured and converted into a ```geohash``` (using the public domain geocode system invented in 2008 by Gustavo Niemeye)
-* the ```geohash``` is combined with the time (express in UTC as per the ISO8601 standard, rounded to a five minute intervan) to make a ```geotemporal hash```
-* the ```geotemporal hash``` is encrypted using public key cryptography (using the open source Curve25519 schema)
+* each user is assigned an anonymous UUID (this is done according to the [ISO 9834 standard](https://www.iso.org/standard/58055.html))
+* at periodic intervals spatial coordinates captured and converted into a ```geohash``` (using the [public domain geocode system invented in 2008 by Gustavo Niemeye](https://en.wikipedia.org/wiki/Geohash))
+* the ```geohash``` is combined with the time (express in [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time) as per the [ISO8601 standard](https://en.wikipedia.org/wiki/ISO_8601), rounded to a five minute intervan) to make a ```geotemporal hash```
+* the ```geotemporal hash``` is encrypted using public key cryptography (using the [open source Curve25519 schema](https://en.wikipedia.org/wiki/Curve25519))
 * thus a persons position at a given time(e.g. ```geotemporal hash```) is encrypted
 
 ### looking for collisions
-* if two persons were in the same place at the same time (a ```collision```) they should share the same value for the ```geotemporal hash```. Assuming that both are encrypted using the same public key they will have an identical ciphertext value.
+* if two persons were in the same place at the same time (a ```collision```) they should share the same value for the ```geotemporal hash```. Assuming that both are encrypted using the same public key ***they will have an identical ciphertext value***.
 * this means that we can compare the ciphertext to look for ```collisions``` between individuals _without knowing where they actually were_
 * this is valuable because it preserves privacy but enables a rapid efficient search
-* as a second layer of privacy, users are entered in the database using UUIDs (not names or other identifiers)
+* as a second layer of privacy, users are entered in the database using UUIDs (not names or other identifiers); thus even if collisions are identified they do not expose the users identity
 
 
 ### examples
