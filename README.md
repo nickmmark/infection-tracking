@@ -18,20 +18,17 @@ _worldwide spread of Wuhan Coronavirus December 2019 to February 2020, source: w
 
 
 ## proposed solution
-* ***Our mobile app and associated platform takes advantage of the fact that modern smartphones are ubiquitous, able to collect geospatial data, and able to share it over secure networks. By developing a privacy preserving algorithm, we enable users to immediately see if they have been exposed to infected individuals without risking exposure of thier location data.***
+* ***Use ubiquitous mobile phones to track users and combine with encryption to protect privacy***
+* A mobile app and associated platform takes advantage of the fact that modern smartphones are ubiquitous, able to collect geospatial data, and able to share it over secure networks. By developing a privacy preserving algorithm, we enable users to immediately see if they have been exposed to infected individuals without risking exposure of thier location data.***
  * individuals can download an app to see information about where infections have been reported
  * this app also securely tracks users locations
  * this information can be used to identify if a user has been in the same location as an infected person
-
-## design of app and platform
 * there are two core pieces of the platform
   * a mobile app that can provide information about outbreaks and securely track locations
   * a platform that can identify exposure between infected individuals and other users
   
 ## Geotemporalspatial encoding of data
-* objective: combine time and location data into a encrypted hash; the ciphertext can be compared to look for ```collisions``` without compromising the users privacy by revealing thier location.
-
-### overview of enabling technologies
+* ***The key ideas is to combine time and location data into a encrypted hash; the ciphertext can be compared to look for ```collisions``` without compromising the users privacy by revealing thier location.***
 * Geohash is an open source method developed in 2008 to turn two (or more) spatial coordinates into a single hashed value
 * The technology turns a time series of geospatial coordinates into an encrypted and anonymized dataset; if a known infected person is identified the platform can search for other individuals who occupied the same place at the same time (they share identical geotemporal coordinates).
 * users who are potentially exposed can see alerts tagged to thier UUIDs
